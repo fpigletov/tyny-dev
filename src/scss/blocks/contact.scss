@@ -1,0 +1,126 @@
+.contact {
+  background-color: var(--main-blue);
+
+  &__container {
+    padding: 0 185px;
+
+    @media (max-width: 992px) {
+      padding: 0 62px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 20px;
+    }
+  } 
+
+  &__title {
+    color: var(--main-white);
+    margin-bottom: 69px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 66px;
+    }
+
+    @media (max-width: 480px) {
+      line-height: 140%;
+      margin-bottom: 80px;
+    }
+  } 
+
+  &__form {
+
+  } 
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+    margin-bottom: 28px;
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 480px) {
+      margin-bottom: 138px;
+    }
+
+    
+  } 
+
+  &__label {
+    display: block;
+    width: 100%;
+    height: 50px;
+  } 
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 12px 19px;
+    outline: none;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--main-blue);
+    border: 3px solid var(--main-white); 
+    transition: border-color 0.3s ease;
+    &:focus {
+      border-color: var(--light-blue);
+    }
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.50);
+      font-size: 18px;
+    }
+    
+  } 
+  &__textarea {
+    grid-column: 1/3;
+    height: 120px;
+
+    @media (max-width: 600px) {
+      grid-column: 1/2;
+      height: 124px;
+    }
+
+    textarea {
+      display: block;
+      width: 100%;
+      height: 100%;
+      resize: none;
+      padding: 14px 20px;
+      outline: none;
+      font-size: 18px;
+      line-height: 140%;
+      color: var(--main-blue);
+      border: 3px solid var(--main-white);
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border-color: var(--light-blue);
+      }
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.50);
+        font-size: 18px;
+      }
+    }
+  } 
+
+  &__submit {
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 480px) {
+      justify-content: center;
+    }
+  } 
+
+  &__btn {
+    padding: 28px 35px;
+
+    @media (max-width: 480px) {
+      padding: 29px 59px;
+    }
+  }
+} 
